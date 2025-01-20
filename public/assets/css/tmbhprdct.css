@@ -1,0 +1,154 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    margin-inline: 1.5rem;
+}
+
+/*=============== FORM CONTAINER ===============*/
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Untuk memastikan kolom-kolom tetap rapi pada layar kecil */
+}
+
+/*=============== FORM IMAGE ===============*/
+/*=============== FORM IMAGE ===============*/
+.form-image {
+    width: 30%; /* Membuat form gambar lebih kecil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Menyembunyikan input file default */
+.form-image .file-input {
+    display: none;
+}
+
+/* Label untuk input file */
+.form-image .file-input-label {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem; /* Menambahkan jarak atas pada tombol choose image */
+}
+
+/* Gambar placeholder dengan rasio 1:1 */
+.form-image .image-placeholder {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Rasio 1:1 untuk gambar */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Menampilkan gambar pada placeholder */
+.form-image .image-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menambahkan jarak pada keterangan gambar */
+.form-image small {
+    margin-top: 1rem;
+}
+
+/*=============== FORM DETAILS ===============*/
+.form-details {
+    width: 65%; /* Mengatur sisa ruang untuk detail produk */
+}
+
+/* Setiap grup form memiliki margin bottom */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*=============== BUTTON ===============*/
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem; /* Menambahkan jarak di atas tombol */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*=============== SMALL TEXT ===============*/
+small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #888;
+}
+
+/*=============== MEDIA QUERY FOR RESPONSIVENESS ===============*/
+@media screen and (max-width: 768px) {
+    /* Menyesuaikan form-container untuk tampilan vertikal pada layar kecil */
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Menambahkan jarak antar elemen */
+    }
+
+    /* Menyesuaikan ukuran form-image agar lebar 100% */
+    .form-image {
+        width: 100%;
+        margin-bottom: 2rem; /* Menambahkan margin bottom */
+    }
+
+    /* Menyesuaikan ukuran form-details agar lebar 100% */
+    .form-details {
+        width: 100%;
+    }
+
+    /* Tombol akan menyesuaikan lebar otomatis pada tampilan kecil */
+    button {
+        width: auto;
+    }
+
+    /* Mengurangi jarak antara label dan input di form */
+    .form-group input {
+        padding: 0.6rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+}

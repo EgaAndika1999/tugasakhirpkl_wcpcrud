@@ -58,20 +58,24 @@
                             <span>Dashboard</span>
                         </a>
 
-                        <a href="{{ route('aboutus') }}" class="sidebar__link">
-                            <i class="ri-arrow-up-down-line"></i>
-                            <span>Services & Products</span>
-                        </a>
-
                         <a href="{{ route('teamproduct') }}" class="sidebar__link">
                             <i class="ri-calendar-fill"></i>
                             <span>Team CodeWave</span>
                         </a>
 
+                        <a href="{{ route('aboutus') }}" class="sidebar__link">
+                            <i class="ri-arrow-up-down-line"></i>
+                            <span>Services & Products</span>
+                        </a>
 
                         <a href="{{ route('projectcdw') }}" class="sidebar__link">
                             <i class="ri-wallet-3-fill"></i>
                             <span>Market CodeWave</span>
+                        </a>
+
+                        <a href="{{ route('promobuy') }}" class="sidebar__link">
+                            <i class="ri-wallet-3-fill"></i>
+                            <span>Paket Combo</span>
                         </a>
 
                         {{-- <a href="#" class="sidebar__link">
@@ -134,14 +138,23 @@
             <button class="add-button" onclick="alert('Add Product Functionality')">+ Add Product</button>
         </div> --}}
 
+        <!-- Welcome Text -->
+        <div class="hero-section">
+            <h1>Jasa Pembuatan Website, Pembuatan Game, dan Desain UI/UX di Malang</h1>
+            <p>Di Codewave Software House, kami memadukan teknologi mutakhir, keterampilan teknis, dan keahlian industri untuk menciptakan solusi yang mendorong pertumbuhan bisnis Anda.</p>
+            <button class="cta-button">Lihat Penawaran</button>
+        </div>
+        
+
         <!-- Cards Container -->
         <div class="cards-container">
             <!-- Card 1 -->
             <div class="card">
-                <img src="{{ asset('assets/img/landscape-1.png') }}" alt="Product Image">
+                <img src="{{ asset('assets/img/buy1.png') }}" alt="Product Image">
                 <div class="card-content">
                     <h3 class="card-title">Jasa Pembuatan Website</h3>
-                    <p class="card-description">Jasa Pembuatan Website Modern, Responsif, dan Profesional untuk Bisnis Anda</p>
+                    <p class="card-description">Jasa Pembuatan Website Modern, Responsif, dan Profesional untuk Bisnis
+                        Anda</p>
                     <div class="card-actions">
                         <button>Buy</button>
                     </div>
@@ -153,7 +166,8 @@
                 <img src="{{ asset('assets/img/landscape-1.png') }}" alt="Product Image">
                 <div class="card-content">
                     <h3 class="card-title">Jasa Pembuatan Game</h3>
-                    <p class="card-description">Jasa Pembuatan Game Kreatif dan Interaktif untuk Platform Mobile dan PC Anda</p>
+                    <p class="card-description">Jasa Pembuatan Game Kreatif dan Interaktif untuk Platform Mobile dan PC
+                        Anda</p>
                     <div class="card-actions">
                         <button>Buy</button>
                     </div>
@@ -165,7 +179,8 @@
                 <img src="{{ asset('assets/img/landscape-1.png') }}" alt="Product Image">
                 <div class="card-content">
                     <h3 class="card-title">Jasa Desain UI/UX</h3>
-                    <p class="card-description">Menyediakan Jasa Desain Product, Kaos, Kemeja, dan UI/UX untuk Bisnis Anda</p>
+                    <p class="card-description">Menyediakan Jasa Desain Product, Kaos, Kemeja, dan UI/UX untuk Bisnis
+                        Anda</p>
                     <div class="card-actions">
                         <button>Buy</button>
                     </div>

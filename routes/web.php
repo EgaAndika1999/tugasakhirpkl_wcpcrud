@@ -47,6 +47,10 @@ Route::get('/aboutus', function () {
 Route::get('/projectcdw', function () {
     return view('productpage.projectcodewv');
 })->name('projectcdw');
+/* ================== ROUTE UNTUK SIDEBAR DASHBOARD KE HALAMAN PAKET =============== */
+Route::get('/promobuy', function () {
+    return view('productpage.promobuy');
+})->name('promobuy');
 /* ================== ROUTE UNTUK SIDEBAR DASHBOARD KE HALAMAN AWAL =============== */
 Route::get('/', function () {
     return view('landingpage.index');
@@ -68,6 +72,10 @@ Route::get('/ateamcdw', function () {
 Route::get('/aprojectcdw', function () {
     return view('productpage.projectcodewv');
 })->name('aprojectcdw');
+/* ================== ROUTE UNTUK SIDEBAR ABOUT KE HALAMAN PROMO =============== */
+Route::get('/apromobuy', function () {
+    return view('productpage.promobuy');
+})->name('apromobuy');
 /* ================== ROUTE UNTUK SIDEBAR ABOUT KE HALAMAN AWAL =============== */
 Route::get('/', function () {
     return view('landingpage.index');
@@ -89,6 +97,10 @@ Route::get('/tabout', function () {
 Route::get('/tproject', function () {
     return view('productpage.projectcodewv');
 })->name('tproject');
+/* ================== ROUTE UNTUK SIDEBAR TEAM KE HALAMAN PROMO =============== */
+Route::get('/tpromobuy', function () {
+    return view('productpage.promobuy');
+})->name('tpromobuy');
 /* ================== ROUTE UNTUK SIDEBAR ABOUT KE HALAMAN AWAL =============== */
 Route::get('/', function () {
     return view('landingpage.index');
@@ -110,6 +122,32 @@ Route::get('/pabout', function () {
 Route::get('/pteam', function () {
     return view('productpage.teamproduct');
 })->name('pteam');
+/* ================== ROUTE UNTUK SIDEBAR PROJECT KE HALAMAN PROMO =============== */
+Route::get('/ppromobuy', function () {
+    return view('productpage.promobuy');
+})->name('ppromobuy');
+/* ================== ROUTE UNTUK SIDEBAR ABOUT KE HALAMAN AWAL =============== */
+Route::get('/', function () {
+    return view('landingpage.index');
+})->name('home');
+
+/* ================== KUMPULAN ROUTE SIDEBAR PROMO MENUJU DASHBOARD, ABOUT, TEAM, HOME, LOGOUT =============== */
+/* ================== ROUTE UNTUK SIDEBAR PROMO KE HALAMAN DASHBOARD =============== */
+Route::get('/bdashboard', function () {
+    return view('productpage.product');
+})->name('bdashboard');
+/* ================== ROUTE UNTUK SIDEBAR PROMO KE HALAMAN ABOUT =============== */
+Route::get('/babout', function () {
+    return view('productpage.aboutproduct');
+})->name('babout');
+/* ================== ROUTE UNTUK SIDEBAR PROMO KE HALAMAN TEAM =============== */
+Route::get('/bteam', function () {
+    return view('productpage.teamproduct');
+})->name('bteam');
+/* ================== ROUTE UNTUK SIDEBAR PROMO KE HALAMAN PROJECT =============== */
+Route::get('/bproject', function () {
+    return view('productpage.teamproduct');
+})->name('bproject');
 /* ================== ROUTE UNTUK SIDEBAR ABOUT KE HALAMAN AWAL =============== */
 Route::get('/', function () {
     return view('landingpage.index');

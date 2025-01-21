@@ -58,19 +58,24 @@
                             <span>Dashboard</span>
                         </a>
 
-                        <a href="#" class="sidebar__link active-link">
-                            <i class="ri-arrow-up-down-line"></i>
-                            <span>Services & Products</span>
-                        </a>
-
                         <a href="{{ route('ateamcdw') }}" class="sidebar__link ">
                             <i class="ri-calendar-fill"></i>
                             <span>Team CodeWave</span>
                         </a>
 
+                        <a href="#" class="sidebar__link active-link">
+                            <i class="ri-arrow-up-down-line"></i>
+                            <span>Services & Products</span>
+                        </a>
+
                         <a href="{{ route('aprojectcdw') }}" class="sidebar__link">
                             <i class="ri-wallet-3-fill"></i>
                             <span>Market CodeWave</span>
+                        </a>
+
+                        <a href="{{ route('apromobuy') }}" class="sidebar__link">
+                            <i class="ri-wallet-3-fill"></i>
+                            <span>Paket Combo</span>
                         </a>
                     </div>
                 </div>
@@ -110,7 +115,43 @@
 
     <!--=============== MAIN ===============-->
     <main class="main container" id="main">
+
+        <div class="card-group">
+            <div class="card">
+                <img src="{{ asset('assets/img/1.jpg') }}" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h1>tes1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui tenetur placeat quis aperiam magni.</p>
+                    <button>explore</button>
+                </div>
+            </div>
+        </div>
         
+        <div class="card-group">
+            <div class="card">
+                <img src="{{ asset('assets/img/2.jpg') }}" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h1>tes2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui tenetur placeat quis aperiam magni.</p>
+                    <button>explore</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="{{ asset('assets/img/3.jpg') }}" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h1>tes3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui tenetur placeat quis aperiam magni.</p>
+                    <button>explore</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!--============= MAIN JS ===============-->

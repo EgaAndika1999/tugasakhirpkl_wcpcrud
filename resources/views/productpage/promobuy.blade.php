@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('assets/css/projectcdw.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/promo.css') }}">
 
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="{{ asset('assets/img/navbarcw2.png') }}" type="image/svg+xml">
@@ -53,27 +53,27 @@
                     <h3 class="sidebar__title">MANAGE</h3>
 
                     <div class="sidebar__list">
-                        <a href="pdashboard" class="sidebar__link ">
+                        <a href="bdashboard" class="sidebar__link ">
                             <i class="ri-pie-chart-2-fill"></i>
                             <span>Dashboard</span>
                         </a>
 
-                        <a href="pteam" class="sidebar__link ">
+                        <a href="bteam" class="sidebar__link">
                             <i class="ri-calendar-fill"></i>
                             <span>Team CodeWave</span>
                         </a>
 
-                        <a href="pabout" class="sidebar__link ">
+                        <a href="babout" class="sidebar__link">
                             <i class="ri-arrow-up-down-line"></i>
                             <span>Services & Products</span>
                         </a>
 
-                        <a href="#" class="sidebar__link active-link">
+                        <a href="bproject" class="sidebar__link">
                             <i class="ri-wallet-3-fill"></i>
                             <span>Market CodeWave</span>
                         </a>
 
-                        <a href="ppromobuy" class="sidebar__link">
+                        <a href="#" class="sidebar__link  active-link">
                             <i class="ri-wallet-3-fill"></i>
                             <span>Paket Combo</span>
                         </a>
@@ -84,7 +84,7 @@
                     <h3 class="sidebar__title">SETTINGS</h3>
 
                     <div class="sidebar__list">
-                        <a href="#" class="sidebar__link">
+                        <a href="{{ route('home') }}" class="sidebar__link">
                             <i class="ri-notification-2-fill"></i>
                             <span>Home</span>
                         </a>
@@ -115,10 +115,7 @@
 
     <!--=============== MAIN ===============-->
     <main class="main container" id="main">
-        <button onclick="window.location='{{ route('tmbhproduct') }}'">
-            <div class="text">+ Add Product</div>
-            <div class="wave"></div>
-        </button>
+       
     </main>
 
     <!--============= MAIN JS ===============-->

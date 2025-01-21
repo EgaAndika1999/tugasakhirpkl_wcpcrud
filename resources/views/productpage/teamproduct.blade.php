@@ -58,19 +58,24 @@
                             <span>Dashboard</span>
                         </a>
 
-                        <a href="tabout" class="sidebar__link">
-                            <i class="ri-arrow-up-down-line"></i>
-                            <span>Services & Products</span>
-                        </a>
-
                         <a href="#" class="sidebar__link active-link">
                             <i class="ri-calendar-fill"></i>
                             <span>Team CodeWave</span>
                         </a>
 
+                        <a href="tabout" class="sidebar__link">
+                            <i class="ri-arrow-up-down-line"></i>
+                            <span>Services & Products</span>
+                        </a>
+
                         <a href="tproject" class="sidebar__link">
                             <i class="ri-wallet-3-fill"></i>
                             <span>Market CodeWave</span>
+                        </a>
+
+                        <a href="tpromobuy" class="sidebar__link">
+                            <i class="ri-wallet-3-fill"></i>
+                            <span>Paket Combo</span>
                         </a>
                     </div>
                 </div>

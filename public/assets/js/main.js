@@ -39,3 +39,24 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+/**
+ * navbar dropdown
+ */
+  // Menangani klik pada dropdown
+  document.querySelectorAll('.dropdown-toggle').forEach((dropdownToggle) => {
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const dropdown = this.parentElement;
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  // Menutup dropdown saat klik di luar
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach((dropdown) => {
+        dropdown.classList.remove('active');
+      });
+    }
+  });

@@ -360,65 +360,110 @@ body.dark-theme .cta-button:hover {
 
 
 /*=============== CARD OPEN ===============*/
-/*=============== CARD PRODUCT ===============*/
-.cards-container {
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 125%; /* Proporsi 4:5 */
+}
+
+.card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
 }
+
 .card {
-  background-color: var(--body-color);
-  box-shadow: 0 4px 6px var(--shadow-color);
-  border-radius: 0.75rem;
+  position: relative;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px var(--shadow-color);
+
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 125%; /* Proporsi 4:5 */
 }
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+
+.background {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.7) saturate(1.2);
 }
-.card-content {
-  padding: 1rem;
+
+.card:hover .background {
+  transform: scale(1.1);
+  filter: none;
 }
-.card-title {
-  font-size: 1.25rem;
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-  margin-bottom: 0.5rem;
+
+.card-grid:hover > .card:not(:hover) .background {
+  filter: brightness(0.5) blur(5px);
 }
-.card-description {
-  font-size: var(--normal-font-size);
-  color: var(--text-color);
-  margin-bottom: 1rem;
+
+.content {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-.card-actions {
+
+.content .category {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.content .heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/*=============== CARD CLOSE ===============*/
+
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--body-color);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--shadow-color);
+  text-align: center;
+}
+
+.footer__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
 }
-.card-actions button {
-  padding: 0.5rem 1rem;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi-bold);
-  border: 1px solid var(--first-color);
-  border-radius: 0.5rem;
-  color: var(--body-color);
-  background-color: var(--first-color);
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+
+.footer__text {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
 }
-.card-actions button:hover {
-  background-color: var(--body-color);
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__link {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
   color: var(--first-color);
 }
-/*=============== CARD close ===============*/
 
 
 
@@ -564,4 +609,3 @@ body.dark-theme .cta-button:hover {
     padding-left: 114px;
   }
 }
-

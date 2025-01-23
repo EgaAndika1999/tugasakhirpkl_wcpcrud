@@ -51,6 +51,14 @@
                         <li>
                             <a href="#home" class="navbar-link" data-navbar-link>Home</a>
                         </li>
+                        
+                        <li>
+                            <a href="#" class="navbar-link" data-navbar-link>Solutions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link" data-navbar-link>Company</a>
+                        </li>
 
                         <li>
                             <a href="#features" class="navbar-link" data-navbar-link>Features</a>
@@ -72,7 +80,18 @@
                 </div>
             </nav>
 
-            {{-- <button class="btn btn-secondary">
+           
+                <a href="https://wa.me/6285604507401" class="btn btn-secondary">
+                    <span>Contact</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+ {{-- <button class="btn btn-secondary">
         <span>Contact</span>
 
         <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -90,19 +109,6 @@
           <span>Contact</span>
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </button> --}}
-                <a href="https://wa.me/6285604507401" class="btn btn-secondary">
-                    <span>Contact</span>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </a>
-
-            </div>
-
-        </div>
-    </header>
-
-
-
-
 
     <main>
         <article>

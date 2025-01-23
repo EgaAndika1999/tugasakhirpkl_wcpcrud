@@ -133,67 +133,70 @@
 
     <!--=============== MAIN ===============-->
     <main class="main container" id="main">
-        <!-- Add Button -->
-        {{-- <div>
-            <button class="add-button" onclick="alert('Add Product Functionality')">+ Add Product</button>
-        </div> --}}
 
         <!-- Welcome Text -->
         <div class="hero-section">
-            <h1>Jasa Pembuatan Website, Pembuatan Game, dan Desain UI/UX di Malang</h1>
-            <p>Di Codewave Software House, kami memadukan teknologi mutakhir, keterampilan teknis, dan keahlian industri untuk menciptakan solusi yang mendorong pertumbuhan bisnis Anda.</p>
+            <h1>Solusi Digital Terdepan: Jasa Pembuatan Website, Game, dan Desain UI/UX Kreatif di Trenggalek!</h1>
+            <p>Codewave: Spesialis website, desain UI/UX, game, & IT consulting. Hadirkan solusi digital inovatif untuk
+                mendorong kesuksesan bisnis Anda!</p>
             <button class="cta-button">Lihat Penawaran</button>
         </div>
-        
 
         <!-- Cards Container -->
-        <div class="cards-container">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="{{ asset('assets/img/buy1.png') }}" alt="Product Image">
-                <div class="card-content">
-                    <h3 class="card-title">Jasa Pembuatan Website</h3>
-                    <p class="card-description">Jasa Pembuatan Website Modern, Responsif, dan Profesional untuk Bisnis
-                        Anda</p>
-                    <div class="card-actions">
-                        <button>Buy</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="{{ asset('assets/img/landscape-1.png') }}" alt="Product Image">
-                <div class="card-content">
-                    <h3 class="card-title">Jasa Pembuatan Game</h3>
-                    <p class="card-description">Jasa Pembuatan Game Kreatif dan Interaktif untuk Platform Mobile dan PC
-                        Anda</p>
-                    <div class="card-actions">
-                        <button>Buy</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="{{ asset('assets/img/landscape-1.png') }}" alt="Product Image">
-                <div class="card-content">
-                    <h3 class="card-title">Jasa Desain UI/UX</h3>
-                    <p class="card-description">Menyediakan Jasa Desain Product, Kaos, Kemeja, dan UI/UX untuk Bisnis
-                        Anda</p>
-                    <div class="card-actions">
-                        <button>Buy</button>
-                    </div>
-                </div>
-            </div>
+        <div class="card-grid">
+            <a class="card" href="#">
+              <div class="background" style="background-image: url('assets/img/1.jpg')"></div>
+              <div class="content">
+                <p class="category">Jasa Pembuatan Website</p>
+                <h3 class="heading">Product Name 1</h3>
+              </div>
+            </a>
+          
+            <a class="card" href="#">
+              <div class="background" style="background-image: url('assets/img/2.jpg')"></div>
+              <div class="content">
+                <p class="category">Jasa Pembuatan Game</p>
+                <h3 class="heading">Product Name 2</h3>
+              </div>
+            </a>
+          
+            <a class="card" href="#">
+              <div class="background" style="background-image: url('assets/img/3.jpg')"></div>
+              <div class="content">
+                <p class="category">Desain UI/UX </p>
+                <h3 class="heading">Product Name 3</h3>
+              </div>
+            </a>
+          </div>
+        
+        <!--=============== FOOTER ===============-->
+<footer class="footer">
+    <div class="footer__container container">
+        <p class="footer__text">
+            © 2025 Codewave. All rights reserved. 
+        </p>
+        <div class="footer__socials">
+            <a href="https://facebook.com" target="_blank" class="footer__link">
+                <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="footer__link">
+                <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer__link">
+                <i class="ri-instagram-fill"></i>
+            </a>
         </div>
+    </div>
+</footer>
 
-        {{-- <div>
-            <button class="add-button" onclick="window.location='{{ route('tmbhproduct') }}'">+ Add Product</button>
-        </div> --}}
+
+
+
 
     </main>
-
+    {{-- <div>
+        <button class="add-button" onclick="window.location='{{ route('tmbhproduct') }}'">+ Add Product</button>
+    </div> --}}
     <!--============= MAIN JS ===============-->
     <script src="{{ asset('assets/js/main2.js') }}"></script>
 </body>
